@@ -1,7 +1,6 @@
 import React from 'react';
 import {Table, Icon, Button,} from "semantic-ui-react" 
 
-
 class Card extends React.Component {
   state ={front:true}
 
@@ -16,7 +15,7 @@ class Card extends React.Component {
           <Button className="ui button" color="blue" icon>
             <Icon name="pencil"/>
             </Button>
-          <Button className="ui button" color="red" icon>
+          <Button className="ui button" color="red" icon onClick={() => this.props.remove(this.props.id)}>
             <Icon name="trash alternate"/>
             </Button>
         </Table.Cell>

@@ -2,7 +2,7 @@ import React from 'react';
 import Card from './Card';
 import {Table,} from 'semantic-ui-react';
 
-const Cards = ({cards, front, flipCard, remove, }) => (
+const Cards = ({cards, add, remove, }) => (
     <Table>
       <Table.Header>
         <Table.Row>
@@ -13,7 +13,7 @@ const Cards = ({cards, front, flipCard, remove, }) => (
       </Table.Header>
 
       <Table.Body>
-        { cards.map(card => ( <Card key={card.id} {...card} front={front} flipCard={flipCard} remove={remove}/> )) } 
+        { cards.map(card => ( <Card key={card.id} {...card} remove={remove}/> )) } 
       </Table.Body>
     </Table>
 )
