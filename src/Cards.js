@@ -6,6 +6,7 @@ const Cards = ({cards, add, remove, }) => (
     <Table>
       <Table.Header>
         <Table.Row>
+          <Table.HeaderCell collapsing>Needs Review?</Table.HeaderCell>
           <Table.HeaderCell>Card</Table.HeaderCell>
           <Table.HeaderCell>Interactions</Table.HeaderCell>
         </Table.Row>
